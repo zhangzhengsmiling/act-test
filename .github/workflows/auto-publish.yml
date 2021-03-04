@@ -3,7 +3,7 @@ name: Node.js Package
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   publish-npm:
@@ -17,4 +17,3 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-          
