@@ -3,7 +3,7 @@ name: echo-hello
 # Run this workflow every time a new commit pushed to your repository
 on:
   push:
-    branchs:
+    branches:
       - main
 
 jobs:
@@ -21,4 +21,4 @@ jobs:
         uses: actions/checkout@v2
         
       - name: echo
-        run: [echo "Hello, World", yarn test]
+        run: echo "Hello, World" && yarn test
