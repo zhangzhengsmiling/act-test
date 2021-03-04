@@ -4,7 +4,7 @@ name: echo-hello
 on:
   push:
     branches:
-      - main
+      - feature/node_modules_cache
 
 jobs:
   # Set the job key. The key is displayed as the job name
@@ -21,4 +21,6 @@ jobs:
         uses: actions/checkout@v2
         
       - name: echo
-        run: echo "Hello, World" && yarn test
+        run: |
+          echo "Hello, World"
+          yarn test
