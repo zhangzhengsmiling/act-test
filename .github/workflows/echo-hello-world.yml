@@ -4,7 +4,7 @@ name: echo-hello
 on:
   push:
     branches:
-      - main
+      - feature/node_modules_cache
 
 jobs:
   # Set the job key. The key is displayed as the job name
@@ -16,9 +16,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checks out a copy of your repository on the ubuntu-latest machine
-      - name: Checkout code
-        uses: actions/checkout@v2
-        
-      - name: echo
-        run: echo "Hello, World" && yarn test
+      - uses: actions/checkout@v2
+
+      # 缓存node_modules
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install packages
+        run: yarn install
+
