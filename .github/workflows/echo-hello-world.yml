@@ -16,8 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
+      # 缓存node_modules
       - uses: actions/cache@v2
         with:
           path: '**/node_modules'
@@ -25,4 +26,4 @@ jobs:
 
       - name: Install packages
         run: yarn install
-        
+
