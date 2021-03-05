@@ -1,6 +1,6 @@
 {
   "name": "zhangzheng-act-test",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "src/index.js",
   "license": "MIT",
   "devDependencies": {
@@ -12,8 +12,10 @@
     "standard-version": "^9.1.1"
   },
   "scripts": {
-    "test": "pwd",
-    "release": "yarn standard-version"
+    "test": "echo 'test'",
+    "release": "yarn standard-version",
+    "eslint": "echo 'eslint...'; exit 1;",
+    "prettier": "echo 'prettier'"
   },
   "config": {
     "commitizen": {
@@ -21,11 +23,26 @@
     }
   },
   "dependencies": {
+    "@testing-library/react": "^11.2.5",
+    "jest": "^26.6.3",
+    "less": "^4.1.1",
+    "less-loader": "^8.0.0",
+    "lodash": "^4.17.21",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
+    "react-amap": "^1.2.8",
+    "react-dnd": "^13.1.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "sass-loader": "^11.0.1",
+    "vue": "^2.6.12",
+    "vue-amap": "^0.5.10",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0"
   },
   "husky": {
     "hooks": {
