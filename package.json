@@ -15,7 +15,8 @@
     "test": "echo 'test'",
     "release": "yarn standard-version",
     "eslint": "echo 'eslint...'; exit 1;",
-    "prettier": "echo 'prettier'"
+    "prettier": "echo 'prettier'",
+    "build": "webpack"
   },
   "config": {
     "commitizen": {
