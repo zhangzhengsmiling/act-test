@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/zhangzhengsmiling/act-test/compare/v1.2.0...v1.3.0) (2021-03-08)
+
+
+### Features
+
+* 测试 ([fb97737](https://github.com/zhangzhengsmiling/act-test/commit/fb97737233e2776a14b97600acdb9982e2efcf05))
+* test ([1aefd4a](https://github.com/zhangzhengsmiling/act-test/commit/1aefd4a36e87b7fbce4601c0ecac409915e93b47))
+* test ([6660e3e](https://github.com/zhangzhengsmiling/act-test/commit/6660e3e19c340323f8ec5a6049486aca5f0459e5))
+
 ## 1.2.0 (2021-03-05)
 
 
