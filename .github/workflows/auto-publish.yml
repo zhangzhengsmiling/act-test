@@ -6,7 +6,6 @@ on:
 
 jobs:
   setup:
-    setup:
     # Name the Job
     name: setup
     # Set the type of machine to run on
