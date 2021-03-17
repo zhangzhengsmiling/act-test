@@ -38,6 +38,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: [setup]
     steps:
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       - name: eslint
         run: yarn lint
       - name: prettier
@@ -49,6 +53,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: [setup, static-check]
     steps:
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       - name: unit-test
         run: |
           yarn test
