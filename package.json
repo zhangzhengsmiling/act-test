@@ -14,7 +14,7 @@
   "scripts": {
     "test": "yarn jest --verbose",
     "release": "yarn standard-version",
-    "eslint": "echo 'eslint...'; exit 1;",
+    "lint": "echo 'eslint...'; exit 1;",
     "prettier": "echo 'prettier'",
     "build": "webpack"
   },
